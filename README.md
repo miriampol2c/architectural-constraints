@@ -18,7 +18,7 @@ Models weights are available at this ZENODO repository [TBC].
 | Train dataset clusters |     22517      |     19113      |      21908       |      17362       |
 | Valid datasets clusters|      1349      |      1167      |       1311       |       1042       |
 | Test datasets clusters |      1424      |      1212      |       1378       |       1070       |
-| Best models @ epoch    |       111      |       116      |        112       |        118       |
+| Best model @ epoch    |       111      |       116      |        112       |        118       |
 
 ### Main data
 All input/output data needed to reproduce the main results of this article as well as the intermediate analyses are available at this ZENODO repository [TBC].
