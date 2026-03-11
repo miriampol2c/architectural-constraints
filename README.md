@@ -11,21 +11,20 @@ Here we combined reverse-folding and structure-prediction methods with sequence 
 ### Retrained ProteinMPNN versions
 Models weights are available at this ZENODO repository [TBC].
 |                        | PDB Hydrolases | PDB AllEnzymes | CLEAN Hydrolases | CLEAN AllEnzymes |
-|------------------------|----------------|----------------|-----------------|-----------------|
-| Training num epochs    | 120            | 120            | 120             | 120             |
-| Backbone noise training| 0.2            | 0.2            | 0.2             | 0.2             |
-| Training top_k         | 48             | 48             | 48              | 48              |
-| Train dataset clusters | 22517          | 19113          | 21908           | 17362           |
-| Valid datasets clusters| 1349           | 1167           | 1311            | 1042            |
-| Test datasets clusters | 1424           | 1212           | 1378            | 1070            |
-| Best models @ epoch    | 111            | 116            | 112             | 118             |
-
+|:----------------------:|:--------------:|:--------------:|:----------------:|:----------------:|
+| Training num epochs    |      120       |      120       |       120        |       120        |
+| Backbone noise training|      0.2       |      0.2       |       0.2        |       0.2        |
+| Training top_k         |       48       |       48       |        48        |        48        |
+| Train dataset clusters |     22517      |     19113      |      21908       |      17362       |
+| Valid datasets clusters|      1349      |      1167      |       1311       |       1042       |
+| Test datasets clusters |      1424      |      1212      |       1378       |       1070       |
+| Best models @ epoch    |       111      |       116      |        112       |        118       |
 
 ### Main data
 All input/output data needed to reproduce the main results of this article as well as the intermediate analysis are available at this ZENODO repository [TBC].
 
 ### Code
-Here we include:
+This GitHub repository contains:
 - Code to retrain and evaluate ProteinMPNN versions.
 - Preliminar code to apply our design pipeline on different protein families (both on development).
 - Code for the main figures included in the manuscript. 
