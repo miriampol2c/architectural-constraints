@@ -1,0 +1,7 @@
+#!/bin/sh
+#SBATCH options
+
+# load your modules/env here
+
+# be sure not having additional pdbs on current dir
+python3 pip.py --pdb_folder ./path_to_folder/ --jobid whatever --num_ensembles_per_target 32 --num_seqs_per_target 30 --ref any_id_included_in_path

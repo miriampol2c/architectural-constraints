@@ -1,0 +1,10 @@
+#!/bin/sh
+#SBATCH options
+
+# load your modules
+
+pdb_folder=$1
+jobid=$2
+ref=$3
+
+python main_funfams.py --pdb_folder $pdb_folder --num_seq_per_target 30 --sampling_temp 0.1 --modelling ESMFold --jobid $jobid --ref $ref
