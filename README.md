@@ -8,8 +8,11 @@ We combined reverse-folding and structure-prediction methods with sequence analy
 - How local energetic frustration persists within globally minimally frustrated protein energy landscapes.
 <img width="12503" height="11189" alt="final" src="https://github.com/user-attachments/assets/5bf8c4a5-03ec-4e05-a320-240a569a1232" />
 
+### Main data
+All input/output data needed to reproduce the main results of this article as well as the intermediate analyses are available at this ZENODO repository [TBC].
+
 ### Retrained ProteinMPNN versions
-Models weights are available at this ZENODO repository [TBC].
+Customised datasets and models weights are available at this ZENODO repository [TBC].
 |                        | PDB Hydrolases | PDB AllEnzymes | CLEAN Hydrolases | CLEAN AllEnzymes |
 |:----------------------:|:--------------:|:--------------:|:----------------:|:----------------:|
 | Training num epochs    |      120       |      120       |       120        |       120        |
@@ -19,9 +22,6 @@ Models weights are available at this ZENODO repository [TBC].
 | Valid datasets clusters|      1349      |      1167      |       1311       |       1042       |
 | Test datasets clusters |      1424      |      1212      |       1378       |       1070       |
 | Best model @ epoch    |       111      |       116      |        112       |        118       |
-
-### Main data
-All input/output data needed to reproduce the main results of this article as well as the intermediate analyses are available at this ZENODO repository [TBC].
 
 ### Code
 This GitHub repository contains the code for:
