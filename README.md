@@ -1,7 +1,7 @@
 # Adaptive and Spandrel-like Constraints at Functional Sites in Protein Folds
 📄 Read the full [preprint](https://www.biorxiv.org/content/10.64898/2026.02.09.704872v1) on bioRxiv.
 
-We combined reverse-folding and structure-prediction methods with sequence analysis and local energetic frustration to address several long-standing challenges in molecular biology:
+Our methodology (c) combines reverse-folding (a) and structure-prediction (b) methods with sequence analysis and local energetic frustration to address several long-standing challenges in molecular biology:
 - How protein sequence diversity maps onto a conserved three-dimensional fold.
 - Which sequence elements primarily support structural integrity versus molecular function.
 - Whether protein folds are shaped predominantly by evolutionary selection or by fundamental physical constraints.
