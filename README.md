@@ -47,8 +47,8 @@ For inference and evaluation:
 python3 eval.py --data_path="path/of/extracted/dataset" --list_path="path/of/customised/data.csv" --model_path="path/to/your/new/weights.pt"
 ```
 After Execution of each command read the results in the training.log or testing.log files in the 'loggs/' directory.
-- #### Preliminary design pipelines applicable to any protein family (both on development)
-([generation-pipelines]([https://github.com/miriampol2c/architectural-constraints/tree/main/train-and-eval-code](https://github.com/miriampol2c/architectural-constraints/tree/main/main-code)))
+- #### Preliminary design pipelines applicable to any protein family
+([generation-pipelines](https://github.com/miriampol2c/architectural-constraints/tree/main/train-and-eval-code](https://github.com/miriampol2c/architectural-constraints/tree/main/main-code))
 
-Currently under development and are not yet optimized for end-user usage.
+Currently both under development for personal usage, not yet optimized for end-user usage. Just possible to reuse individual scripts and functions.
 - #### Code for the main figures included in the manuscript
