@@ -25,8 +25,8 @@ All input/output data needed to reproduce the main results of this article as we
 
 ### Code
 This GitHub repository contains:
-#### Code to retrain and evaluate ProteinMPNN versions 
-([code]([https://github.com/USERNAME/REPO_NAME/tree/main/FOLDER_NAME](https://github.com/miriampol2c/architectural-constraints/tree/main/train-and-eval-code)))
+- #### Code to retrain and evaluate ProteinMPNN versions 
+([code](https://github.com/miriampol2c/architectural-constraints/tree/main/train-and-eval-code))
 Needed: Python>=3.0, PyTorch, Numpy.
 The multi-chain training data (16.5 GB, PDB biounits, 2021 August 2) can be downloaded with:
 ```
@@ -45,5 +45,5 @@ For inference and evaluation:
 python3 eval.py --data_path="path/of/extracted/dataset" --list_path="path/of/customised/data.csv" --model_path="path/to/your/new/weights.pt"
 ```
 After Execution of each command read the results in the training.log or testing.log files in the 'loggs/' directory.
-#### Preliminar code to apply our design pipeline on different protein families (both on development)
-#### Code for the main figures included in the manuscript
+- #### Preliminar code to apply our design pipeline on different protein families (both on development)
+- #### Code for the main figures included in the manuscript
