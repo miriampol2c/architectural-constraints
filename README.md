@@ -1,6 +1,6 @@
 # Adaptive and Spandrel-like Constraints at Functional Sites in Protein Folds
 
-📄 Read the full [preprint](https://www.biorxiv.org/content/10.64898/2026.02.09.704872v1) on bioRxiv [![]([https://img.shields.io/badge/DOI-10.1126/science.add2187-lightgrey)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9997061/](https://www.biorxiv.org/content/10.64898/2026.02.09.704872v1))
+📄 Read the full [preprint](https://www.biorxiv.org/content/10.64898/2026.02.09.704872v1) on bioRxiv [![]([https://img.shields.io/badge/DOI-10.1126/bioRxiv.add2187-blue)](https://www.biorxiv.org/content/10.64898/2026.02.09.704872v1))
 
 ## Project Overview
 Understanding the relationships among amino acid sequences, structures and functions in proteins and how they evolve, remains a central challenge in molecular biology. It is still unclear which sequence elements differentially contribute to structural integrity or molecular function. Even more, there are ongoing debates on whether protein folds emerge as a result of evolution or as a consequence of physical laws. The energy landscapes theory states that proteins are minimally frustrated systems, i.e. they fold by minimising their energetic conflicts. However, some local frustration, believed to be selected for functional reasons, remains in the native state of proteins. Here, we combine reverse folding and structure prediction methods with sequence and local frustration analysis to address the aforementioned ideas. We found that reverse folding techniques are unable to erase evolutionary conserved frustration from certain residues, even when detrimental for structural integrity. We propose that certain frustration hotspots behave like architectural spandrels, not directly shaped by selection but emerging from physical constraints in protein folds which evolution can later co-opt for function. Our results provide a new perspective revealing how sequence variation and functional specificity could evolve from evolutionary, structural and biophysical constraints.
@@ -41,10 +41,11 @@ Currently both under development for personal usage, not yet optimized for end-u
 
 ## Data Availability
 - #### Results
-All input/output data needed to reproduce the main results of this article as well as the intermediate analyses are available at this ZENODO repository [![](https://img.shields.io/badge/DOI-10.1038/s41586--023--06415--8-lightgrey)](https://doi.org/10.5281/zenodo.18922047)
+All input/output data needed to reproduce the main results of this article as well as the intermediate analyses are available at this ZENODO repository [![](https://img.shields.io/badge/DOI-10.1038/s41586--023--06415--8-blue)](https://doi.org/10.5281/zenodo.18922047)
+
 The results data structure is generally described there, check the [repo](https://doi.org/10.5281/zenodo.18922047).
 - #### Retrained ProteinMPNN versions
-Customised datasets and models weights are available at this ZENODO repository [![](https://img.shields.io/badge/DOI-10.1038/s41586--023--06415--8-lightgrey)](https://doi.org/10.5281/zenodo.18957473)
+Customised datasets and models weights are available at this ZENODO repository [![](https://img.shields.io/badge/DOI-10.1038/s41586--023--06415--8-blue)](https://doi.org/10.5281/zenodo.18957473)
 |                        | PDB Hydrolases | PDB AllEnzymes | CLEAN Hydrolases | CLEAN AllEnzymes |
 |:----------------------:|:--------------:|:--------------:|:----------------:|:----------------:|
 | Training num epochs    |      120       |      120       |       120        |       120        |
@@ -56,10 +57,14 @@ Customised datasets and models weights are available at this ZENODO repository [
 | Best model @ epoch    |       111      |       116      |        112       |        118       |
 
 ## Citation
-- ##### Manuscript
+- #### Manuscript
   [Citation information to be added upon publication]
-- ##### Data
+- #### Data
+  ```
   Poley-Gil, M. (2026). Architectural-constraints-main-data [Data set]. Zenodo. https://doi.org/10.5281/zenodo.18922047
-- ##### Models
-- Poley-Gil, M. (2026). Retrained-ProteinMPNN-versions. Zenodo. https://doi.org/10.5281/zenodo.18957473
+  ```
+- #### Models
+  ```
+  Poley-Gil, M. (2026). Retrained-ProteinMPNN-versions. Zenodo. https://doi.org/10.5281/zenodo.18957473
+  ```
 
