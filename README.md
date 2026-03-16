@@ -8,8 +8,21 @@ Understanding the relationships among amino acid sequences, structures and funct
 Figure: Exploration of frustration patterns and biophysical constraints of reverse-folded sequences. (a) Reverse-folded sequences are first generated and structurally predicted to confirm that they match a given backbone. (b) Local frustration is then computed for each design using FrustratometeR (Rausch et al., 2021) and integrated across all designs with FrustraEvo (Parra et al., 2024), that measures frustration conservation in the columns of the MSA. Because residue identities may vary among designs, the frustration state at each position may also differ across models. By combining frustration information from all sequences and their MSA, FrustraEvo highlights conserved and variable frustration patterns, revealing which positions share similar energetic behavior and which can tolerate alternative residues. Considering the positions remodelled versus those that remain largely invariant, can help to identify regions constrained by folding, stability, or function. (c) Overview of the proposed workflow for analysing frustration and biophysical constraints in any target or protein family. Combining (a) and (b) we implement two complementary strategies. The Single Target approach designs multiple sequences for one target, their predicted models are then analysed collectively to assess frustration conservation across the entire design set. In contrast, the Family Target approach evaluates a reverse-folding algorithm on a set of homologous structures. For each family member, a best-scoring design (e.g., highest pLDDT) is selected, building a synthetic designed family. FrustraEvo then quantifies frustration conservation across this designed family, providing deeper coverage of sequence space and offering insight into how reverse-folding algorithms handle conserved structural and functional constraints.
 
 ## Repository Structure
-This GitHub repository contains the code for:
-### (1) Retrain and evaluate ProteinMPNN versions 
+This GitHub repository contains the code we used for:
+### (1) Run CLEAN function prediction
+First be sure you have installed CLEAN as documented originally in [here](https://github.com/tttianhao/CLEAN/tree/main).
+Then follow the instructions or check our scripts directly [CLEAN_scripts](https://github.com/miriampol2c/architectural-constraints/tree/main/CLEAN_scripts).
+To generate embeddings:
+```
+python3 CLEAN_compute_emb.py --fasta_data your_fasta_name
+```
+For inference:
+```
+python3 CLEAN_infer_fasta.py --fasta_data your_fasta_name
+```
+After execution check the ‘/CLEAN/Aapp/results/’ directory, as the CLEAN software is designed to save the predictions results there as a csv file. 
+
+### (2) Retrain and evaluate ProteinMPNN versions 
 See [train-and-eval-code](https://github.com/miriampol2c/architectural-constraints/tree/main/train-and-eval-code)
 
 Needed: Python>=3.0, PyTorch, Numpy.
@@ -30,16 +43,17 @@ For inference and evaluation:
 ```
 python3 eval.py --data_path="path/of/extracted/dataset" --list_path="path/of/customised/data.csv" --model_path="path/to/your/new/weights.pt"
 ```
-After Execution of each command read the results in the training.log or testing.log files in the 'loggs/' directory.
-### (2) Run CLEAN function prediction
-[TBC]
+After execution of each command read the results in the training.log or testing.log files in the 'loggs/' directory.
   
 ### (3) Run design pipelines applicable to any protein family
 See [generation-pipelines](https://github.com/miriampol2c/architectural-constraints/tree/main/main-code)
 
 Currently both under development for personal usage, not yet optimized for end-user usage. Just possible to reuse individual scripts and functions.
+
 ### (4) Code for the main figures included in the manuscript
-[TBC]
+See [code-main-figures](https://github.com/miriampol2c/architectural-constraints/tree/main/code-main-figures)
+
+We provided the code to reproduce Multiple Sequence Frustration Alignment (MSFA) and Consensus MSFA visualizations (considering the frustration conservation threshold for coloring instead of the median index per position), following latest frustration analyses Freiberger et al., 2023](https://www.nature.com/articles/s41467-023-43801-2); as well as the code to generate contacts networks by using frustration results.
 
 ## Data Availability
 ### Results
