@@ -11,7 +11,9 @@ Figure: Exploration of frustration patterns and biophysical constraints of rever
 This GitHub repository contains the code we used for:
 ### (1) Run CLEAN function prediction
 First be sure you have installed CLEAN as documented originally in [here](https://github.com/tttianhao/CLEAN/tree/main).
+
 Then follow the instructions or check our scripts directly [CLEAN_scripts](https://github.com/miriampol2c/architectural-constraints/tree/main/CLEAN_scripts).
+
 To generate embeddings:
 ```
 python3 CLEAN_compute_emb.py --fasta_data your_fasta_name
@@ -53,7 +55,7 @@ Currently both under development for personal usage, not yet optimized for end-u
 ### (4) Code for the main figures included in the manuscript
 See [code-main-figures](https://github.com/miriampol2c/architectural-constraints/tree/main/code-main-figures)
 
-We provided the code to reproduce Multiple Sequence Frustration Alignment (MSFA) and Consensus MSFA visualizations (considering the frustration conservation threshold for coloring instead of the median index per position), following latest frustration analyses Freiberger et al., 2023](https://www.nature.com/articles/s41467-023-43801-2); as well as the code to generate contacts networks by using frustration results.
+We provided the code to reproduce Multiple Sequence Frustration Alignment (MSFA) and Consensus MSFA visualizations (considering the frustration conservation threshold for coloring instead of the median index per position), following latest frustration analyses [Freiberger et al., 2023](https://www.nature.com/articles/s41467-023-43801-2); as well as the code to generate contacts networks by using frustration results.
 
 ## Data Availability
 ### Results
